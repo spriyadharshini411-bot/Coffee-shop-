@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+</nav>
+
+<input type="text" id="searchInput" placeholder="🔍 Search Coffee">
+
+    <h1>☕ Coffee Shop</h1>
+    <p>Welcome to our Coffee Shop! Enjoy the best coffee in town. ☕</p>
+
+    <p class="tagline">Fresh Coffee Every Day</p>
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee" width="300">
+
+    <h2>Menu</h2>
+    
+
+<div class="menu-container">
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400">
+    <h3>Espresso</h3>
+    <p>₹100</p>
+    <button onclick="addCart(100)">Add To Cart</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400">
+    <h3>Cappuccino</h3>
+    <p>₹150</p>
+    <button onclick="addCart(150)">Add To Cart</button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400">
+    <h3>Latte</h3>
+    <p>₹180</p>
+    <button onclick="addCart(180)">Add To Cart</button>
+</div>
+
+</div>
+
+<h3>🛒 Cart Total: ₹<span id="total">0</span></h3>
+
+    
+    <button>Order Now</button>
+    <h2>About Us</h2>
+
+<p>
+We serve fresh and delicious coffee every day.
+Our goal is to make every customer smile with a perfect cup of coffee.
+</p>
+<h2>Order Coffee</h2>
+
+<input type="text" placeholder="Enter Your Name">
+
+<br><br>
+
+<select>
+    <option>Espresso</option>
+    <option>Cappuccino</option>
+    <option>Latte</option>
+</select>
+
+<br><br>
+
+<input type="number" placeholder="Quantity">
+
+<br><br>
+
+<button>Place Order</button>
+<h2>Special Offer</h2>
+
+<p>🎉 Buy 2 Coffees and Get 1 Free! ☕</p>
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" width="250">
+<h2>Customer Reviews</h2>
+
+<p>⭐⭐⭐⭐⭐ Amazing Coffee!</p>
+<p>⭐⭐⭐⭐ Great Service!</p>
+<p>⭐⭐⭐⭐⭐ Best Coffee Shop!</p>
+<h2>Feedback</h2>
+
+<input type="text" placeholder="Your Name">
+
+<br><br>
+
+<textarea placeholder="Write your feedback" rows="4" cols="30"></textarea>
+
+<br><br>
+
+<button>Submit Feedback</button>
+<h2>Opening Hours</h2>
+
+<p>Monday - Friday : 8:00 AM - 9:00 PM</p>
+<p>Saturday : 9:00 AM - 10:00 PM</p>
+<p>Sunday : 10:00 AM - 8:00 PM</p>
+<h2>Best Seller</h2>
+
+<p>🏆 Cappuccino - ₹150</p>
+<p>Our customers' favorite coffee!</p>
+<h2>Contact Us</h2>
+
+<p>📞 Phone: 9876543210</p>
+
+<p>📧 Email: coffeeshop@gmail.com</p>
+
+<p>📍 Chennai, Tamil Nadu</p>
+<h2>Find Us</h2>
+
+<button>View Location</button>
+<button onclick="darkMode()">🌙 Dark Mode</button>
+<script>
+function darkMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+<hr>
+
+<footer>
+    <p>© 2026 Coffee Shop. All Rights Reserved.</p>
+    <p>Made with ☕ and ❤️</p>
+</footer>
+
+
+<button id="topBtn">⬆</button>
+<script>
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    const cards = document.querySelectorAll(".card");
+    const searchValue = searchInput.value.toLowerCase();
+
+    cards.forEach(function(card) {
+
+        const coffeeName = card.querySelector("h3").textContent.toLowerCase();
+
+        if (coffeeName.includes(searchValue)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+<script>
+let total = 0;
+
+function addCart(price) {
+    total += price;
+    document.getElementById("total").innerText = total;
+}
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function () {
+
+    const cards = document.querySelectorAll(".card");
+    const searchValue = searchInput.value.toLowerCase();
+
+    cards.forEach(function(card) {
+
+        const coffeeName = card.querySelector("h3").textContent.toLowerCase();
+
+        if (coffeeName.includes(searchValue)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+</script>
+
+
+
+
+</body>
+</html>
+
+
