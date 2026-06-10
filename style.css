@@ -34,14 +34,16 @@ select{
     border-radius:10px;
     border:1px solid #ccc;
     font-size:18px;
+    margin:10px;
 }
 
-/* Heading */
+/* Main Title */
 h1{
-    font-size:70px;
+    font-size:90px;
     color:brown;
     font-family:cursive;
     margin-top:20px;
+    margin-bottom:10px;
 }
 
 .tagline{
@@ -50,19 +52,24 @@ h1{
     font-weight:bold;
 }
 
+/* Section Headings */
 h2{
-    font-size:55px;
+    font-size:60px;
     color:black;
-    margin-top:40px;
+    margin-top:50px;
+    margin-bottom:20px;
 }
 
 h3{
-    font-size:30px;
+    font-size:32px;
 }
 
+/* Paragraphs */
 p{
-    font-size:24px;
+    font-size:28px;
     line-height:1.8;
+    width:90%;
+    margin:auto;
 }
 
 /* Main Coffee Image */
@@ -73,7 +80,7 @@ body > img{
     margin-top:20px;
 }
 
-/* Menu Section */
+/* Menu Cards */
 .menu-container{
     display:flex;
     justify-content:center;
@@ -127,7 +134,8 @@ button:hover{
 
 /* Special Offer Image */
 h2 + p + img{
-    width:350px;
+    width:450px;
+    max-width:95%;
     border-radius:15px;
 }
 
@@ -155,7 +163,7 @@ footer{
     background:#000;
 }
 
-/* Top Button */
+/* Scroll Top Button */
 #topBtn{
     position:fixed;
     bottom:20px;
@@ -167,19 +175,23 @@ footer{
     display:none;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media(max-width:768px){
 
     h1{
-        font-size:48px;
+        font-size:65px;
     }
 
     h2{
-        font-size:38px;
+        font-size:48px;
+    }
+
+    h3{
+        font-size:28px;
     }
 
     p{
-        font-size:20px;
+        font-size:24px;
     }
 
     nav a{
@@ -203,5 +215,9 @@ footer{
 
     body > img{
         width:95%;
+    }
+
+    button{
+        font-size:18px;
     }
 }
