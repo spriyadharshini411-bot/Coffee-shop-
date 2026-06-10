@@ -25,25 +25,24 @@ nav a{
     font-weight:bold;
 }
 
-/* Search Box */
+/* Inputs */
 input,
 textarea,
 select{
-    padding:12px;
-    width:300px;
+    padding:15px;
+    width:350px;
     border-radius:10px;
     border:1px solid #ccc;
-    font-size:18px;
+    font-size:24px;
     margin:10px;
 }
 
 /* Main Title */
 h1{
-    font-size:90px;
+    font-size:100px;
     color:brown;
     font-family:cursive;
     margin-top:20px;
-    margin-bottom:10px;
 }
 
 .tagline{
@@ -52,7 +51,7 @@ h1{
     font-weight:bold;
 }
 
-/* Section Headings */
+/* Section Titles */
 h2{
     font-size:60px;
     color:black;
@@ -60,13 +59,14 @@ h2{
     margin-bottom:20px;
 }
 
+/* Card Titles */
 h3{
-    font-size:32px;
+    font-size:35px;
 }
 
-/* Paragraphs */
+/* Content Text */
 p{
-    font-size:28px;
+    font-size:32px;
     line-height:1.8;
     width:90%;
     margin:auto;
@@ -110,7 +110,7 @@ body > img{
 }
 
 .card h3{
-    font-size:28px;
+    font-size:30px;
 }
 
 .card p{
@@ -122,21 +122,14 @@ button{
     background:brown;
     color:white;
     border:none;
-    padding:15px 30px;
+    padding:18px 35px;
     border-radius:10px;
     cursor:pointer;
-    font-size:22px;
+    font-size:26px;
 }
 
 button:hover{
     background:darkred;
-}
-
-/* Special Offer Image */
-h2 + p + img{
-    width:450px;
-    max-width:95%;
-    border-radius:15px;
 }
 
 /* Footer */
@@ -179,11 +172,11 @@ footer{
 @media(max-width:768px){
 
     h1{
-        font-size:65px;
+        font-size:70px;
     }
 
     h2{
-        font-size:48px;
+        font-size:45px;
     }
 
     h3{
@@ -218,6 +211,6 @@ footer{
     }
 
     button{
-        font-size:18px;
+        font-size:20px;
     }
-}
+        }
