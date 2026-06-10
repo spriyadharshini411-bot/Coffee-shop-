@@ -36,7 +36,6 @@ select{
     font-size:24px;
     margin:10px;
 }
-
 /* Main Title */
 h1{
     font-size:100px;
@@ -44,6 +43,7 @@ h1{
     font-family:cursive;
     margin-top:20px;
 }
+
 
 .tagline{
     font-size:35px;
