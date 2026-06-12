@@ -1,11 +1,6 @@
 
 body{
-    background: linear-gradient(
-        to bottom,
-        #fff8f0,
-        #e6ccb2,
-        #d6b89c
-    );
+    background: linear-gradient(to bottom,#fff8f0,#e6ccb2,#d6b89c);
     text-align:center;
     font-family:Arial,sans-serif;
     margin:0;
@@ -14,76 +9,63 @@ body{
 
 /* Navbar */
 nav{
-    background-color:brown;
-    padding:18px;
-    position:sticky;
-    top:0;
+    background:brown;
+    padding:20px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
     margin:20px;
-    font-size:24px;
+    font-size:30px;
     font-weight:bold;
 }
 
-nav a:hover{
-    color:gold;
+/* Main Title */
+h1{
+    font-size:100px;
+    font-weight:bold;
+    color:brown;
+    text-align:center;
+    margin-top:20px;
 }
 
-/* Search */
-#searchInput{
-    margin-top:20px;
+/* Tagline */
+.tagline{
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* Section Titles */
+h2{
+    font-size:60px;
+    font-weight:bold;
+    margin-top:40px;
+}
+
+/* Card Title */
+h3{
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* Paragraph */
+p{
+    font-size:32px;
+    width:90%;
+    margin:auto;
+    line-height:1.8;
 }
 
 /* Inputs */
 input,
 textarea,
 select{
-    padding:15px;
-    width:350px;
+    width:450px;
+    padding:18px;
+    font-size:28px;
     border-radius:10px;
-    border:1px solid #ccc;
-    font-size:20px;
     margin:10px;
-}
-
-/* Main Title */
-h1{
-    font-size:80px;
-    color:brown;
-    font-family:cursive;
-    margin-top:20px;
-}
-
-.tagline{
-    font-size:35px;
-    color:#555;
-    font-weight:bold;
-}
-
-/* Section Titles */
-h2{
-    font-size:50px;
-    color:black;
-    margin-top:50px;
-}
-
-/* Content */
-p{
-    font-size:24px;
-    line-height:1.8;
-    width:90%;
-    margin:auto;
-}
-
-/* Main Coffee Image */
-body > img{
-    width:90%;
-    max-width:700px;
-    border-radius:15px;
-    margin-top:20px;
 }
 
 /* Menu Cards */
@@ -92,35 +74,29 @@ body > img{
     justify-content:center;
     gap:25px;
     flex-wrap:wrap;
-    margin-top:20px;
 }
 
 .card{
-    width:300px;
+    width:350px;
     background:white;
     padding:20px;
     border-radius:15px;
     box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
 }
 
 .card img{
     width:100%;
-    height:220px;
+    height:250px;
     object-fit:cover;
     border-radius:10px;
 }
 
 .card h3{
-    font-size:28px;
+    font-size:40px;
 }
 
 .card p{
-    font-size:22px;
+    font-size:30px;
 }
 
 /* Buttons */
@@ -128,10 +104,11 @@ button{
     background:brown;
     color:white;
     border:none;
-    padding:15px 30px;
+    padding:20px 40px;
+    font-size:30px;
+    font-weight:bold;
     border-radius:10px;
     cursor:pointer;
-    font-size:20px;
     margin:10px;
 }
 
@@ -141,10 +118,11 @@ button:hover{
 
 /* Footer */
 footer{
-    margin-top:40px;
-    padding:25px;
     background:brown;
     color:white;
+    padding:20px;
+    margin-top:40px;
+    font-size:24px;
 }
 
 /* Dark Mode */
@@ -159,12 +137,7 @@ footer{
 }
 
 .dark nav{
-    background:#000;
-}
-
-.dark h1,
-.dark h2{
-    color:white;
+    background:black;
 }
 
 /* Scroll Top Button */
@@ -172,31 +145,22 @@ footer{
     position:fixed;
     bottom:20px;
     right:20px;
-    padding:12px 18px;
-    border:none;
-    border-radius:50%;
-    cursor:pointer;
     display:none;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media(max-width:768px){
 
     h1{
-        font-size:50px;
+        font-size:60px;
     }
 
     h2{
-        font-size:35px;
+        font-size:40px;
     }
 
     p{
-        font-size:20px;
-    }
-
-    nav a{
-        font-size:18px;
-        margin:10px;
+        font-size:22px;
     }
 
     .card{
@@ -207,9 +171,14 @@ footer{
     textarea,
     select{
         width:85%;
+        font-size:20px;
     }
 
     button{
-        font-size:18px;
+        font-size:22px;
+    }
+
+    nav a{
+        font-size:20px;
     }
 }
