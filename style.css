@@ -10,93 +10,95 @@ body{
 /* Navbar */
 nav{
     background:brown;
-    padding:20px;
+    padding:30px;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:20px;
-    font-size:30px;
-    font-weight:bold;
+    margin:25px;
+    font-size:45px;
+    font-weight:900;
 }
 
-/* Main Title */
+/* Coffee Shop Title */
 h1{
-    font-size:100px;
-    font-weight:bold;
+    font-size:180px;
+    font-weight:900;
     color:brown;
     text-align:center;
-    margin-top:20px;
+    margin-top:30px;
+    margin-bottom:20px;
 }
 
 /* Tagline */
 .tagline{
-    font-size:40px;
+    font-size:55px;
     font-weight:bold;
 }
 
 /* Section Titles */
 h2{
-    font-size:60px;
-    font-weight:bold;
-    margin-top:40px;
+    font-size:90px;
+    font-weight:900;
+    margin-top:60px;
 }
 
-/* Card Title */
+/* Card Titles */
 h3{
-    font-size:40px;
-    font-weight:bold;
+    font-size:60px;
+    font-weight:900;
 }
 
-/* Paragraph */
+/* Paragraphs */
 p{
-    font-size:32px;
-    width:90%;
+    font-size:42px;
+    line-height:2;
+    width:95%;
     margin:auto;
-    line-height:1.8;
 }
 
 /* Inputs */
 input,
 textarea,
 select{
-    width:450px;
-    padding:18px;
-    font-size:28px;
-    border-radius:10px;
-    margin:10px;
+    width:650px;
+    padding:25px;
+    font-size:35px;
+    border-radius:12px;
+    border:1px solid #ccc;
+    margin:15px;
 }
 
 /* Menu Cards */
 .menu-container{
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:30px;
     flex-wrap:wrap;
 }
 
 .card{
-    width:350px;
+    width:500px;
     background:white;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 .card img{
     width:100%;
-    height:250px;
+    height:300px;
     object-fit:cover;
-    border-radius:10px;
+    border-radius:15px;
 }
 
 .card h3{
-    font-size:40px;
+    font-size:55px;
 }
 
 .card p{
-    font-size:30px;
+    font-size:40px;
 }
 
 /* Buttons */
@@ -104,12 +106,12 @@ button{
     background:brown;
     color:white;
     border:none;
-    padding:20px 40px;
-    font-size:30px;
-    font-weight:bold;
-    border-radius:10px;
+    padding:25px 50px;
+    font-size:40px;
+    font-weight:900;
+    border-radius:12px;
     cursor:pointer;
-    margin:10px;
+    margin:15px;
 }
 
 button:hover{
@@ -120,9 +122,9 @@ button:hover{
 footer{
     background:brown;
     color:white;
-    padding:20px;
-    margin-top:40px;
-    font-size:24px;
+    padding:30px;
+    margin-top:50px;
+    font-size:30px;
 }
 
 /* Dark Mode */
@@ -152,15 +154,23 @@ footer{
 @media(max-width:768px){
 
     h1{
-        font-size:60px;
+        font-size:80px;
     }
 
     h2{
-        font-size:40px;
+        font-size:50px;
+    }
+
+    h3{
+        font-size:35px;
     }
 
     p{
-        font-size:22px;
+        font-size:24px;
+    }
+
+    nav a{
+        font-size:24px;
     }
 
     .card{
@@ -171,14 +181,10 @@ footer{
     textarea,
     select{
         width:85%;
-        font-size:20px;
-    }
-
-    button{
         font-size:22px;
     }
 
-    nav a{
-        font-size:20px;
+    button{
+        font-size:24px;
     }
 }
