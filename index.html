@@ -1,64 +1,68 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Coffee Shop</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Shop</title>
 </head>
+
 <body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Menu</a>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">Menu</a> |
     <a href="#">Contact</a>
 </nav>
 
+<hr>
+
+<h1>☕ Coffee Shop</h1>
+
+<p>Welcome to our Coffee Shop! Enjoy the best coffee in town.</p>
+
 <input type="text" id="searchInput" placeholder="🔍 Search Coffee">
 
-    <h1>☕ Coffee Shop</h1>
-    <p>Welcome to our Coffee Shop! Enjoy the best coffee in town. ☕</p>
-
-    <p class="tagline">Fresh Coffee Every Day</p>
-    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee" width="300">
-
-    <h2>Menu</h2>
-    
-
-<div class="menu-container">
+<h2>Menu</h2>
 
 <div class="card">
-    <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400">
+    <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=400" width="200">
     <h3>Espresso</h3>
     <p>₹100</p>
     <button onclick="addCart(100)">Add To Cart</button>
 </div>
 
+<br>
+
 <div class="card">
-    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400" width="200">
     <h3>Cappuccino</h3>
     <p>₹150</p>
     <button onclick="addCart(150)">Add To Cart</button>
 </div>
 
+<br>
+
 <div class="card">
-    <img src="https://images.unsplash.com/..." alt="Offer" class="offer-img">
-    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" width="200">
     <h3>Latte</h3>
     <p>₹180</p>
     <button onclick="addCart(180)">Add To Cart</button>
 </div>
 
-</div>
-
 <h3>🛒 Cart Total: ₹<span id="total">0</span></h3>
 
-    
-    <button>Order Now</button>
-    <h2>About Us</h2>
+<button onclick="orderNow()">Order Now</button>
+
+<hr>
+
+<h2>About Us</h2>
 
 <p>
 We serve fresh and delicious coffee every day.
 Our goal is to make every customer smile with a perfect cup of coffee.
 </p>
+
 <h2>Order Coffee</h2>
 
 <input type="text" placeholder="Enter Your Name">
@@ -66,9 +70,9 @@ Our goal is to make every customer smile with a perfect cup of coffee.
 <br><br>
 
 <select>
-    <option>Espresso</option>
-    <option>Cappuccino</option>
-    <option>Latte</option>
+<option>Espresso</option>
+<option>Cappuccino</option>
+<option>Latte</option>
 </select>
 
 <br><br>
@@ -77,136 +81,129 @@ Our goal is to make every customer smile with a perfect cup of coffee.
 
 <br><br>
 
-<button>Place Order</button>
+<button onclick="placeOrder()">Place Order</button>
+
+<hr>
+
 <h2>Special Offer</h2>
 
-<p>🎉 Buy 2 Coffees and Get 1 Free! ☕</p>
+<p>🎉 Buy 2 Coffees and Get 1 Free!</p>
 
-<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" width="250">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500" width="250">
+
+<hr>
+
 <h2>Customer Reviews</h2>
 
 <p>⭐⭐⭐⭐⭐ Amazing Coffee!</p>
 <p>⭐⭐⭐⭐ Great Service!</p>
 <p>⭐⭐⭐⭐⭐ Best Coffee Shop!</p>
+
+<hr>
+
 <h2>Feedback</h2>
 
 <input type="text" placeholder="Your Name">
 
 <br><br>
 
-<textarea placeholder="Write your feedback" rows="4" cols="30"></textarea>
+<textarea placeholder="Write your feedback"></textarea>
 
 <br><br>
 
-<button>Submit Feedback</button>
+<button onclick="submitFeedback()">Submit Feedback</button>
+
+<hr>
+
 <h2>Opening Hours</h2>
 
 <p>Monday - Friday : 8:00 AM - 9:00 PM</p>
 <p>Saturday : 9:00 AM - 10:00 PM</p>
 <p>Sunday : 10:00 AM - 8:00 PM</p>
+
+<hr>
+
 <h2>Best Seller</h2>
 
 <p>🏆 Cappuccino - ₹150</p>
-<p>Our customers' favorite coffee!</p>
+
+<hr>
+
 <h2>Contact Us</h2>
 
 <p>📞 Phone: 9876543210</p>
-
 <p>📧 Email: coffeeshop@gmail.com</p>
-
 <p>📍 Chennai, Tamil Nadu</p>
-<h2>Find Us</h2>
 
-<button>View Location</button>
+<button onclick="viewLocation()">View Location</button>
+
+<br><br>
+
 <button onclick="darkMode()">🌙 Dark Mode</button>
-<script>
-function darkMode() {
-    document.body.classList.toggle("dark");
-}
-</script>
+
+<br><br>
+
+<button id="topBtn">⬆ Top</button>
+
 <hr>
 
 <footer>
-    <p>© 2026 Coffee Shop. All Rights Reserved.</p>
-    <p>Made with ☕ and ❤️</p>
+<p>© 2026 Coffee Shop. All Rights Reserved.</p>
 </footer>
-
-
-<button id="topBtn">⬆</button>
-<script>
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", function() {
-  if (window.scrollY > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-});
-
-topBtn.addEventListener("click", function() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-</script>
-
-<script>
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("keyup", function () {
-
-    const cards = document.querySelectorAll(".card");
-    const searchValue = searchInput.value.toLowerCase();
-
-    cards.forEach(function(card) {
-
-        const coffeeName = card.querySelector("h3").textContent.toLowerCase();
-
-        if (coffeeName.includes(searchValue)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-
-    });
-
-});
-</script>
 
 <script>
 let total = 0;
 
-function addCart(price) {
+function addCart(price){
     total += price;
     document.getElementById("total").innerText = total;
 }
 
-const searchInput = document.getElementById("searchInput");
+function orderNow(){
+    alert("☕ Thank you for ordering!");
+}
 
-searchInput.addEventListener("keyup", function () {
+function placeOrder(){
+    alert("🎉 Order placed successfully!");
+}
 
-    const cards = document.querySelectorAll(".card");
-    const searchValue = searchInput.value.toLowerCase();
+function submitFeedback(){
+    alert("❤️ Thank you for your feedback!");
+}
 
-    cards.forEach(function(card) {
+function viewLocation(){
+    window.open("https://maps.google.com");
+}
 
-        const coffeeName = card.querySelector("h3").textContent.toLowerCase();
+function darkMode(){
+    document.body.style.backgroundColor =
+    document.body.style.backgroundColor === "black"
+    ? "white" : "black";
 
-        if (coffeeName.includes(searchValue)) {
+    document.body.style.color =
+    document.body.style.color === "white"
+    ? "black" : "white";
+}
+
+document.getElementById("topBtn").onclick = function(){
+    window.scrollTo({top:0,behavior:"smooth"});
+};
+
+document.getElementById("searchInput").addEventListener("keyup", function(){
+    let value = this.value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+        let name = card.querySelector("h3").innerText.toLowerCase();
+
+        if(name.includes(value)){
             card.style.display = "block";
-        } else {
+        }else{
             card.style.display = "none";
         }
-
     });
-
 });
 </script>
-
-
-
 
 </body>
 </html>
